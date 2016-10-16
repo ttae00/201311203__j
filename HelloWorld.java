@@ -1,5 +1,4 @@
-package com.sd.hello;
-
+package com.j1.hello;
 public class HelloWorld {
 	
 	
@@ -15,5 +14,4 @@ public class HelloWorld {
 		// TODO Auto-generated method stub
 		System.out.println("Hello,World--");
 	}
-
 }
