@@ -1,3 +1,5 @@
+package dicegame;
+
 public class Dice {
 	private int number= 0;
 	

@@ -1,3 +1,5 @@
+package dicegame;
+
 public class Player {
 	private String name= null;
 	int num=0;

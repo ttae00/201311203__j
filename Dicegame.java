@@ -1,3 +1,5 @@
+package dicegame;
+
 public class Dicegame {
 	
 	private Player p1;
