@@ -8,6 +8,8 @@ public class Dice {
 		System.out.println("turns on " + number);
 		
 	}
+	
+	
 	public int getNum(){
 		return this.number;
 	}
