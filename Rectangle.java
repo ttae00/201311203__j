@@ -1,48 +1,43 @@
-package dd;
+package com.sd.Draw;
 
-public class Rectangle {
+public class Rectangle extends Shape {
 	
+	 private final double width, height, area, perimeter;
+	 Shape shape;
+
 	
-	private int width;
-	private int height;
-	
-	public Rectangle(int w, int h){
-		this.width=w;
-		this.height=h;
+	 public Rectangle(double width, double height) {
+		// TODO Auto-generated constructor stub
+		this.width=width;
+		this.height= height;
+        this.area = width * height;
+        this.perimeter = 2 * (width + height);
+		
 	}
 	
-	public int getWidth(){
-		return width;
-	}
-	public int getHeight(){
-		return height;
-	}
-	public void setHeight(int h){
-		height=h;
-	}
-	public void setWidth(int newWidth){
-		width= newWidth;
-	}
-	
-	public void setSize(int w, int h){
-		setWidth(w);
-		setHeight(h);
-	}
-	
-	public int calcArea(){
-		return width * height;
-	}
-	
-	public static void main(String[] args) {
+	@Override
+	public double calcArea() {
 		// TODO Auto-generated method stub
-		Rectangle r= new Rectangle(2, 3);
-		
-		System.out.println("면적: " + r.calcArea());
-		
-		r.setSize(3, 4);
-		
-		System.out.println("면적: " + r.calcArea());
-
+		return this.area;
 	}
 
+	@Override
+	public double calcPerimeter() {
+		// TODO Auto-generated method stub
+		return this.perimeter;
+	}
+	
+	public String toString(){
+		return "Rectangle..."+super.toString();
+	}
+	
+	public static void main(String[] args){
+		Rectangle rect= new Rectangle(10.0, 10.5);
+	
+		System.out.println(rect.calcArea());
+		System.out.println(rect.calcPerimeter());
+		
+		
+	}
+	
 }
